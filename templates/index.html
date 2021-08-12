@@ -1,0 +1,6 @@
+{% extends 'layouts/master.html' %}
+{% block content %}
+    {% for item in pg['langs'] %}
+        <p>{{ item|title }}</p>
+    {% endfor %}
+{% endblock  %}
