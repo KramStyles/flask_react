@@ -19,10 +19,19 @@
         </ul>
     </nav>
     <h1>Welcome to the {{ pg['title'] }}</h1>
-    {% block content %}
-    {% endblock %}
+    <div class="site-content">
+        {% block content %}
+        {% endblock %}
+    </div>
     <footer>
-        &copy; 2021 - My Code Domain
+        <ul>
+            <li><a href=".">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/terms">Terms & Conditions</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/contact">Contact us</a></li>
+        </ul>
+        <div>&copy; 2021 - My Code Domain</div>
     </footer>
     <script src="/static/js/main.js"></script>
 </body>
